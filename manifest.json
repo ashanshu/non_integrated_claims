@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Copy & Paste Extension",
+    "version": "1.0",
+    "description": "Copy text from one webpage and paste it into another.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  
